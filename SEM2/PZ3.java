@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class PZ3 {
     public static void main(String[] args) throws IOException{
         Logger logger = Logger.getLogger(PZ1.class.getName());
+
         FileHandler fh = new FileHandler("logpz3.xml", true);
 
         Scanner sc = new Scanner(System.in);
@@ -23,6 +24,7 @@ public class PZ3 {
         System.out.print("Введите второй член B :");
         int num2 = sc.nextInt();
 
+      
         int answer = 0;
         if (sign == '+') answer = num1 + num2;
         if (sign == '*') answer = num1 * num2;
